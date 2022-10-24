@@ -26,7 +26,7 @@
         - build.gradle (라이브러리, 버전 설정)
 
 
-## FAST RUN Setting
+## Fast Run Setting
 Setting > Gradle
 
     - Build and run > Build and run using(Run tests using) : IntelliJ IDEA 
@@ -40,3 +40,7 @@ Setting > Gradle
 	c. cd build/libs > hello-spring-0.0.1-SNAPSHOT.jar
 	
 	d. java -jar hello-spring-0.0.1-SNAPSHOT.jar
+	
+	
+## Parameter Info
+    - Ctrl + P
