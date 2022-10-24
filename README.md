@@ -7,7 +7,9 @@
 
     Metadata
         - Group (기업 도메인 명)
+		
         - Artifact (빌드 될 때 나오는 결과물)
+		
         - Java 11 
 
     Dependencies
