@@ -30,3 +30,13 @@
 Setting > Gradle
 
     - Build and run > Build and run using(Run tests using) : IntelliJ IDEA 
+
+
+## HOW TO BUILD ON WINDOWS USING GITBASH?
+    a. Run with gitbash administrator privileges
+	
+    b. ./gradlew build
+	
+	c. cd build/libs > hello-spring-0.0.1-SNAPSHOT.jar
+	
+	d. java -jar hello-spring-0.0.1-SNAPSHOT.jar
