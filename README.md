@@ -44,3 +44,7 @@ Setting > Gradle
 	
 ## Parameter Info
     - Ctrl + P
+	
+	
+## Automatic completion(;)
+    - Ctrl + Shift + Enter 
