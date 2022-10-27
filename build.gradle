@@ -27,6 +27,12 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
 	/**
+	 *  JDBC,H2 Library ADD
+	 */
+	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+	runtimeOnly 'com.h2database:h2'
+
+	/**
 	 *  Lombok Library ADD
 	 */
 	compileOnly 'org.projectlombok:lombok'
