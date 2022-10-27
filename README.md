@@ -62,3 +62,6 @@ Setting > Gradle
 
 ## Automatic Method Extract
     - Ctrl + Alt + M
+
+## Automatic Test File Create
+    - Ctrl + Shfit + T
