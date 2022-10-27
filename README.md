@@ -19,41 +19,41 @@
         - Spring Web 
 		
         - Thymeleaf (html을 만들어주는 템플릿 엔진)
-        
 
     Setting File
-	
+
         - build.gradle (라이브러리, 버전 설정)
 
 
+* 2022-10-27
+
+  Lombok Library
+  - @Getter & @Setter
+  - build.gradle
+    - dependencies 및 configurations 추가 
+
+
+
+# --------- Tips ------------
 ## Fast Run Setting
 Setting > Gradle
 
     - Build and run > Build and run using(Run tests using) : IntelliJ IDEA 
 
-
 ## HOW TO BUILD ON WINDOWS USING GITBASH?
     a. Run with gitbash administrator privileges
-	
     b. ./gradlew build
-	
 	c. cd build/libs > hello-spring-0.0.1-SNAPSHOT.jar
-	
 	d. java -jar hello-spring-0.0.1-SNAPSHOT.jar
-	
-	
+
 ## Parameter Info
     - Ctrl + P
-	
-	
+
 ## Automatic completion(;)
     - Ctrl + Shift + Enter 
 
+## Automatic System.out.println()
+    - soutv 
 
-
-* 2022-10-27
-
-  Lombok Library 
-    - @Getter & @Setter
-    - build.gradle 
-        - dependencies 및 configurations 추가 
+## Automatic Rename
+    - Shift + F6 > Rename code occurrences 
