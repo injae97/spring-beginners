@@ -8,8 +8,7 @@ import org.springframework.stereotype.Controller;
 public class MemberController {
     private final MemberService memberService;
 
-
-    @Autowired  /* 의존 관계 주입(Dependency Injection)  */
+    @Autowired  /* 의존 관계 주입(Dependency Injection) - 생성자 주입  */
     public MemberController(MemberService memberService) {
         this.memberService = memberService;
     }
