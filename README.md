@@ -48,3 +48,12 @@ Setting > Gradle
 	
 ## Automatic completion(;)
     - Ctrl + Shift + Enter 
+
+
+
+* 2022-10-27
+
+  Lombok Library 
+    - @Getter & @Setter
+    - build.gradle 
+        - dependencies 및 configurations 추가 
