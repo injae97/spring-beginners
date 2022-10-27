@@ -69,3 +69,6 @@ Setting > Gradle
 
 ## Automatic Test File Create
     - Ctrl + Shfit + T
+
+## Recently View File
+    - Ctrl + E
