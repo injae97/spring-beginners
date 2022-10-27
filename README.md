@@ -30,9 +30,13 @@
   Lombok Library
   - @Getter & @Setter
   - build.gradle
-      - dependencies 및 configurations 추가 
+    - dependencies 및 configurations 추가
 
+  Bean Register
+  - branch : main (Using Annotation)
+  - branch : Register_Bean_Directly (Using Java)
   
+
 # --------- Tips ------------
 ## Fast Run Setting
 Setting > Gradle
