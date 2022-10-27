@@ -21,7 +21,6 @@ class MemberServiceTest {
         memberService = new MemberService(memberRepository);
     }
 
-
     /**
      * Test Data clear (CallBack Method)
      */
@@ -30,7 +29,9 @@ class MemberServiceTest {
         memberRepository.clearStore();
     }
 
-
+    /**
+     * 단위 테스트 (Unit Test)
+     */
     @Test
     void join() {
         // given
@@ -44,7 +45,6 @@ class MemberServiceTest {
         Member findMember = memberService.findOne(saveId).get();
         assertThat(member.getName()).isEqualTo(findMember.getName());
     }
-
     @Test
     public void validateDuplicateMember() {
         // given
@@ -58,26 +58,5 @@ class MemberServiceTest {
         memberService.join(member1);
         IllegalStateException e = assertThrows(IllegalStateException.class, () -> memberService.join(member2));
         assertThat(e.getMessage()).isEqualTo("이미 존재하는 회원입니다.");
-
-//        try {
-//            memberService.join(member2);
-//        } catch (IllegalStateException e) {
-//            assertThat(e.getMessage()).isEqualTo("이미 존재하는 회원입니다.");
-//        }
-
-        // then
-    }
-
-
-
-
-    @Test
-    void findMembers() {
-
-    }
-
-    @Test
-    void findOne() {
-
     }
 }
