@@ -30,10 +30,9 @@
   Lombok Library
   - @Getter & @Setter
   - build.gradle
-    - dependencies 및 configurations 추가 
+      - dependencies 및 configurations 추가 
 
-
-
+  
 # --------- Tips ------------
 ## Fast Run Setting
 Setting > Gradle
@@ -57,3 +56,9 @@ Setting > Gradle
 
 ## Automatic Rename
     - Shift + F6 > Rename code occurrences 
+
+## Automatic Return
+    - Ctrl + Alt + V 
+
+## Automatic Method Extract
+    - Ctrl + Alt + M
