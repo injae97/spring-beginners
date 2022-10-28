@@ -76,3 +76,6 @@ Setting > Gradle
 
 ## Recently View File
     - Ctrl + E
+
+## Code Combine (Inline) 
+    - Ctrl + ALT + N
