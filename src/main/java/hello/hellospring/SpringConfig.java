@@ -1,5 +1,6 @@
 package hello.hellospring;
 
+import hello.hellospring.aop.TimeTraceAop;
 import hello.hellospring.repository.JdbcMemberRepository;
 import hello.hellospring.repository.JdbcTemplateMemberRepository;
 import hello.hellospring.repository.JpaMemberRepository;
@@ -12,6 +13,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 
 import javax.persistence.EntityManager;
 import javax.sql.DataSource;
+import java.sql.Time;
 
 /**
  * 직접 자바 코드로 Bean 등록
