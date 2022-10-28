@@ -4,10 +4,12 @@ import hello.hellospring.domain.Member;
 import hello.hellospring.repository.MemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 
+@Transactional /* JPA 사용 시 항상 Transactional 있어야 함 */
 public class MemberService {
     private final MemberRepository memberRepository;
 
@@ -29,7 +31,6 @@ public class MemberService {
 
     /**
      * 중복 회원 체크
-     * @param member
      */
     private void validateDuplicateMember(Member member) {
         // 과거에는 null 체크 했지만 요새는 Optional 대체 가능
