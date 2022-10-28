@@ -5,7 +5,8 @@ import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
-@Repository
+/* 스프링 데이터 JPA (Could not autowire. There is more than one bean) 에러로 인하여 주석 처리 :  */
+//@Repository
 public class MemoryMemberRepository implements MemberRepository{
 
     private static Map<Long, Member> store = new HashMap<>();
