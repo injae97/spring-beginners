@@ -1,11 +1,13 @@
 package hello.hellospring;
 
 import hello.hellospring.repository.JdbcMemberRepository;
+import hello.hellospring.repository.JdbcTemplateMemberRepository;
 import hello.hellospring.repository.MemberRepository;
 import hello.hellospring.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.jdbc.core.JdbcTemplate;
 
 import javax.sql.DataSource;
 
@@ -31,7 +33,8 @@ public class SpringConfig {
 
     @Bean
     public MemberRepository memberRepository() {
-        // return new MemoryMemberRepository();
-        return new JdbcMemberRepository(dataSource);
+        // return new MemoryMemberRepository();                 // Memory에 데이터 저장 (스프링 재시작 시 데이터 삭제)
+        // return new JdbcMemberRepository(dataSource);         // JDBC를 통해 데이터 저장 (엄청 긴 코드)
+        return new JdbcTemplateMemberRepository(dataSource);    // JdbcTemplate를 통해 데이터 저장 (엄청 간략해진 코드)
     }
 }
