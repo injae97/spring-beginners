@@ -4,7 +4,7 @@
 
     Spring boot project create 
     - https://start.spring.io
-    - Gradle (요즘 추세) / v2.7.5 (2022.10.24) 
+    - Gradle / v2.7.5 (2022.10.24) 
 
     Metadata
 	
@@ -12,6 +12,8 @@
 		
         - Artifact (빌드 될 때 나오는 결과물)
 		
+        - Packaging : Jar
+
         - Java 11 
 
     Dependencies
