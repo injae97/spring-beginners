@@ -1,19 +1,9 @@
 package hello.hellospring;
 
-import hello.hellospring.aop.TimeTraceAop;
-import hello.hellospring.repository.JdbcMemberRepository;
-import hello.hellospring.repository.JdbcTemplateMemberRepository;
-import hello.hellospring.repository.JpaMemberRepository;
 import hello.hellospring.repository.MemberRepository;
 import hello.hellospring.service.MemberService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.jdbc.core.JdbcTemplate;
-
-import javax.persistence.EntityManager;
-import javax.sql.DataSource;
-import java.sql.Time;
 
 /**
  * 직접 자바 코드로 Bean 등록
@@ -21,6 +11,25 @@ import java.sql.Time;
  */
 @Configuration
 public class SpringConfig {
+
+    private final MemberRepository memberRepository;
+
+    public SpringConfig(MemberRepository memberRepository) {
+        this.memberRepository = memberRepository;
+    }
+
+    @Bean
+    public MemberService memberService() {
+        return new MemberService(memberRepository);    // 스프링 데이터 JPA
+    }
+}
+
+
+
+
+
+
+
 
     /*
     private final DataSource dataSource;
@@ -40,16 +49,6 @@ public class SpringConfig {
     }
     */
 
-    private final MemberRepository memberRepository;
-    public SpringConfig(MemberRepository memberRepository) {
-        this.memberRepository = memberRepository;
-    }
-    @Bean
-    public MemberService memberService() {
-        // return new MemberService(memberRepository());
-        return new MemberService(memberRepository);    // 스프링 데이터 JPA
-    }
-
     /*
     @Bean
     public MemberRepository memberRepository() {
@@ -59,4 +58,4 @@ public class SpringConfig {
         return new JpaMemberRepository(em);                        // JPA를 통해 데이터 저장
     }
     */
-}
+
