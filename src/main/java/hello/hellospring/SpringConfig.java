@@ -18,7 +18,6 @@ public class SpringConfig {
         this.memberRepository = memberRepository;
     }
 
-
     @Bean
     public MemberService memberService() {
         return new MemberService(memberRepository);    // 스프링 데이터 JPA
