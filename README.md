@@ -19,20 +19,21 @@
     + build.gradle (라이브러리, 버전 설정)
 
 
+
 * 2022-10-27
 
   Lombok Library
-  - @Getter & @Setter
-  - build.gradle
+  + @Getter & @Setter
+  + build.gradle
     - dependencies 및 configurations 추가
 
   Bean Register
-  - branch : main (Using Annotation)
-  - branch : Register_Bean_Directly (Using Java)
+  + branch : main (Using Annotation)
+  + branch : Register_Bean_Directly (Using Java)
 
   H2(DB)
-  - jdbc:h2:~/test (최초 한번 접속) 
-  - 이후 jdbc:h2:tcp://localhost/~/test 로 접속
+  + jdbc:h2:~/test (최초 한번 접속) 
+  + 이후 jdbc:h2:tcp://localhost/~/test 로 접속
       * GITBASH 로 test.mv.db 확인 가능
 
 # --------- Tips ------------
