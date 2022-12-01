@@ -2,29 +2,21 @@
 
 * 2022-10-24
 
-    Spring boot project create 
-    - https://start.spring.io
-    - Gradle / v2.7.5
+    + [Spring boot project create](https://start.spring.io)
+    + Gradle : v2.7.5
 
     Metadata
-	
-        - Group (기업 도메인 명)
-		
-        - Artifact (빌드 될 때 나오는 결과물)
-		
-        - Packaging : Jar
-
-        - Java 11 
+    + Group (기업 도메인 명)
+    + Artifact (프로젝트 빌드명)
+    + Packaging : Jar
+    + Java 11 
 
     Dependencies
-	
-        - Spring Web 
-		
-        - Thymeleaf (html을 만들어주는 템플릿 엔진)
+    + Spring Web 
+    + Thymeleaf (html을 만들어주는 템플릿 엔진)
 
     Setting File
-
-        - build.gradle (라이브러리, 버전 설정)
+    + build.gradle (라이브러리, 버전 설정)
 
 
 * 2022-10-27
