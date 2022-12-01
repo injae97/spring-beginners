@@ -36,7 +36,7 @@
   + 이후 jdbc:h2:tcp://localhost/~/test 로 접속
       * GITBASH 로 test.mv.db 확인 가능
 
-# --------- Tips ------------
+
 ## Fast Run Setting
 Setting > Gradle
 
